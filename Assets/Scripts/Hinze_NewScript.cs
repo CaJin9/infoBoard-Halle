@@ -39,6 +39,7 @@ public class Hinze_NewScript : MonoBehaviour
 
     private void Start()
     {
+        InfoBox.SetActive(false);
         string[] savefile = File.ReadAllText(Application.dataPath + "/SAVEFILE.txt").Split(' ');
         Kunde_Daten.API = savefile[0];
         Kunde_Daten.KEY = savefile[1];

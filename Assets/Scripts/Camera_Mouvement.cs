@@ -39,13 +39,15 @@ public class Camera_Mouvement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
+        float y = 0;
+
         if (Input.GetKey(KeyCode.Q))
         {
-            y += 0.1f;
+            y += 1;
         }
         if (Input.GetKey(KeyCode.E))
         {
-            y -= 0.1f;
+            y -= 1;
         }
 
         y = Mathf.Clamp(y, -1, 1);
